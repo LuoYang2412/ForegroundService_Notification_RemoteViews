@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                xmlns:app="http://schemas.android.com/apk/res-auto"
                 xmlns:tools="http://schemas.android.com/tools"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -83,7 +82,7 @@
             android:layout_toLeftOf="@+id/imageButton3"
             android:layout_alignTop="@+id/imageButton3"
             android:layout_alignBottom="@+id/imageButton3"
-            android:background="@android:color/transparent"/>
+            android:background="@null"/>
 
     <ImageButton
             android:layout_width="wrap_content"
@@ -96,20 +95,31 @@
             android:layout_toLeftOf="@+id/imageButton4"
             android:layout_alignTop="@+id/imageButton4"
             android:layout_alignBottom="@+id/imageButton4"
-            android:background="@android:color/transparent"/>
+            android:background="@null"/>
 
     <ImageButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@android:drawable/ic_media_next"
             android:id="@+id/imageButton4"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="true"
-            android:layout_marginEnd="8dp"
-            android:layout_marginRight="8dp"
             android:layout_alignTop="@+id/musicIcon_imageView"
             android:layout_alignBottom="@+id/musicIcon_imageView"
-            android:background="@android:color/transparent"
-            />
+            android:background="@null"
+            android:layout_toStartOf="@+id/imageButton5"
+            android:layout_marginRight="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_toLeftOf="@+id/imageButton5"/>
+
+    <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/ic_menu_close_clear_cancel"
+            android:id="@+id/imageButton5"
+            android:layout_alignParentEnd="true"
+            android:background="@null"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_centerVertical="true"/>
 
 </RelativeLayout>
