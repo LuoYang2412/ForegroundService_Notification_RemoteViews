@@ -81,7 +81,8 @@ class MyMusicService : Service() {
                     PendingIntent.getActivity(
                         this@MyMusicService,
                         0,
-                        Intent(this@MyMusicService, this@MyMusicService::class.java),
+                        Intent(this@MyMusicService, MainActivity::class.java)
+                            .setFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP),
                         PendingIntent.FLAG_UPDATE_CURRENT
                     )
                 )
